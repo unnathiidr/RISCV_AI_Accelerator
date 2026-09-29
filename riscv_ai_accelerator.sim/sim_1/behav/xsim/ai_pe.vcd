@@ -1,0 +1,180 @@
+$date
+   Thu Aug 13 21:46:21 2026
+$end
+
+$version
+  2026.1
+  $dumpfile ("ai_pe.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_ai_pe $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # enable $end
+$var reg 8 $ a_in [7:0] $end
+$var reg 8 % b_in [7:0] $end
+$var wire 8 & a_out [7:0] $end
+$var wire 8 ' b_out [7:0] $end
+$var wire 32 ( accumulator [31:0] $end
+$scope module DUT $end
+$var wire 1 ) clk $end
+$var wire 1 * rst $end
+$var wire 1 + enable $end
+$var wire 8 , a_in [7:0] $end
+$var wire 8 - b_in [7:0] $end
+$var reg 8 . a_out [7:0] $end
+$var reg 8 / b_out [7:0] $end
+$var reg 32 0 accumulator [31:0] $end
+$var reg 16 1 product [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+0#
+b0 $
+b0 %
+b0 &
+b0 '
+b0 (
+0)
+1*
+0+
+b0 ,
+b0 -
+b0 .
+b0 /
+b0 0
+bx 1
+$end
+
+#5000
+1!
+1)
+
+#10000
+0!
+0)
+
+#15000
+1!
+1)
+
+#20000
+0!
+0"
+1#
+b101 $
+b11 %
+0)
+0*
+1+
+b101 ,
+b11 -
+
+#25000
+1!
+b101 &
+b11 '
+b1111 (
+1)
+b101 .
+b11 /
+b1111 0
+b1111 1
+
+#30000
+0!
+b100 $
+b110 %
+0)
+b100 ,
+b110 -
+
+#35000
+1!
+b100 &
+b110 '
+b100111 (
+1)
+b100 .
+b110 /
+b100111 0
+b11000 1
+
+#40000
+0!
+b11111011 $
+b100 %
+0)
+b11111011 ,
+b100 -
+
+#45000
+1!
+b11111011 &
+b100 '
+b10011 (
+1)
+b11111011 .
+b100 /
+b10011 0
+b1111111111101100 1
+
+#50000
+0!
+b1011 $
+b11111110 %
+0)
+b1011 ,
+b11111110 -
+
+#55000
+1!
+b1011 &
+b11111110 '
+b11111111111111111111111111111101 (
+1)
+b1011 .
+b11111110 /
+b11111111111111111111111111111101 0
+b1111111111101010 1
+
+#60000
+0!
+0)
+
+#61000
+0#
+b1100100 $
+b1100100 %
+0+
+b1100100 ,
+b1100100 -
+
+#65000
+1!
+1)
+
+#70000
+0!
+0)
+
+#75000
+1!
+1)
+
+#80000
+0!
+0)
+
+#85000
+1!
+1)

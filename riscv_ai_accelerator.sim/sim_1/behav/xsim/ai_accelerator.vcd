@@ -1,0 +1,1057 @@
+$date
+   Fri Aug 14 10:06:58 2026
+$end
+
+$version
+  2026.1
+  $dumpfile ("ai_accelerator.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_ai_accelerator $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # start $end
+$var reg 8 $ a0 [7:0] $end
+$var reg 8 % a1 [7:0] $end
+$var reg 8 & a2 [7:0] $end
+$var reg 8 ' a3 [7:0] $end
+$var reg 8 ( b0 [7:0] $end
+$var reg 8 ) b1 [7:0] $end
+$var reg 8 * b2 [7:0] $end
+$var reg 8 + b3 [7:0] $end
+$var wire 1 , busy $end
+$var wire 1 - done $end
+$var wire 32 . c00 [31:0] $end
+$var wire 32 / c01 [31:0] $end
+$var wire 32 0 c02 [31:0] $end
+$var wire 32 1 c03 [31:0] $end
+$var wire 32 2 c10 [31:0] $end
+$var wire 32 3 c11 [31:0] $end
+$var wire 32 4 c12 [31:0] $end
+$var wire 32 5 c13 [31:0] $end
+$var wire 32 6 c20 [31:0] $end
+$var wire 32 7 c21 [31:0] $end
+$var wire 32 8 c22 [31:0] $end
+$var wire 32 9 c23 [31:0] $end
+$var wire 32 : c30 [31:0] $end
+$var wire 32 ; c31 [31:0] $end
+$var wire 32 < c32 [31:0] $end
+$var wire 32 = c33 [31:0] $end
+$scope module DUT $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 @ start $end
+$var wire 1 , busy $end
+$var wire 1 - done $end
+$var wire 8 A a0 [7:0] $end
+$var wire 8 B a1 [7:0] $end
+$var wire 8 C a2 [7:0] $end
+$var wire 8 D a3 [7:0] $end
+$var wire 8 E b0 [7:0] $end
+$var wire 8 F b1 [7:0] $end
+$var wire 8 G b2 [7:0] $end
+$var wire 8 H b3 [7:0] $end
+$var wire 32 . c00 [31:0] $end
+$var wire 32 / c01 [31:0] $end
+$var wire 32 0 c02 [31:0] $end
+$var wire 32 1 c03 [31:0] $end
+$var wire 32 2 c10 [31:0] $end
+$var wire 32 3 c11 [31:0] $end
+$var wire 32 4 c12 [31:0] $end
+$var wire 32 5 c13 [31:0] $end
+$var wire 32 6 c20 [31:0] $end
+$var wire 32 7 c21 [31:0] $end
+$var wire 32 8 c22 [31:0] $end
+$var wire 32 9 c23 [31:0] $end
+$var wire 32 : c30 [31:0] $end
+$var wire 32 ; c31 [31:0] $end
+$var wire 32 < c32 [31:0] $end
+$var wire 32 = c33 [31:0] $end
+$var wire 1 I load_enable $end
+$var wire 1 J compute_enable $end
+$var wire 2 K controller_state [1:0] $end
+$scope module CONTROLLER $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 @ start $end
+$var wire 8 L compute_cycles [7:0] $end
+$var reg 1 M busy $end
+$var reg 1 N done $end
+$var reg 1 O load_enable $end
+$var reg 1 P compute_enable $end
+$var reg 2 Q state [1:0] $end
+$var reg 8 R cycle_count [7:0] $end
+$upscope $end
+$scope module SYSTOLIC_ARRAY $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 A a0 [7:0] $end
+$var wire 8 B a1 [7:0] $end
+$var wire 8 C a2 [7:0] $end
+$var wire 8 D a3 [7:0] $end
+$var wire 8 E b0 [7:0] $end
+$var wire 8 F b1 [7:0] $end
+$var wire 8 G b2 [7:0] $end
+$var wire 8 H b3 [7:0] $end
+$var wire 32 . c00 [31:0] $end
+$var wire 32 / c01 [31:0] $end
+$var wire 32 0 c02 [31:0] $end
+$var wire 32 1 c03 [31:0] $end
+$var wire 32 2 c10 [31:0] $end
+$var wire 32 3 c11 [31:0] $end
+$var wire 32 4 c12 [31:0] $end
+$var wire 32 5 c13 [31:0] $end
+$var wire 32 6 c20 [31:0] $end
+$var wire 32 7 c21 [31:0] $end
+$var wire 32 8 c22 [31:0] $end
+$var wire 32 9 c23 [31:0] $end
+$var wire 32 : c30 [31:0] $end
+$var wire 32 ; c31 [31:0] $end
+$var wire 32 < c32 [31:0] $end
+$var wire 32 = c33 [31:0] $end
+$var wire 8 S a00 [7:0] $end
+$var wire 8 T a01 [7:0] $end
+$var wire 8 U a02 [7:0] $end
+$var wire 8 V a03 [7:0] $end
+$var wire 8 W a10 [7:0] $end
+$var wire 8 X a11 [7:0] $end
+$var wire 8 Y a12 [7:0] $end
+$var wire 8 Z a13 [7:0] $end
+$var wire 8 [ a20 [7:0] $end
+$var wire 8 \ a21 [7:0] $end
+$var wire 8 ] a22 [7:0] $end
+$var wire 8 ^ a23 [7:0] $end
+$var wire 8 _ a30 [7:0] $end
+$var wire 8 ` a31 [7:0] $end
+$var wire 8 a a32 [7:0] $end
+$var wire 8 b a33 [7:0] $end
+$var wire 8 c b00 [7:0] $end
+$var wire 8 d b01 [7:0] $end
+$var wire 8 e b02 [7:0] $end
+$var wire 8 f b03 [7:0] $end
+$var wire 8 g b10 [7:0] $end
+$var wire 8 h b11 [7:0] $end
+$var wire 8 i b12 [7:0] $end
+$var wire 8 j b13 [7:0] $end
+$var wire 8 k b20 [7:0] $end
+$var wire 8 l b21 [7:0] $end
+$var wire 8 m b22 [7:0] $end
+$var wire 8 n b23 [7:0] $end
+$var wire 8 o b30 [7:0] $end
+$var wire 8 p b31 [7:0] $end
+$var wire 8 q b32 [7:0] $end
+$var wire 8 r b33 [7:0] $end
+$scope module PE00 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 A a_in [7:0] $end
+$var wire 8 E b_in [7:0] $end
+$var reg 8 s a_out [7:0] $end
+$var reg 8 t b_out [7:0] $end
+$var reg 32 u accumulator [31:0] $end
+$var reg 16 v product [15:0] $end
+$upscope $end
+$scope module PE01 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 S a_in [7:0] $end
+$var wire 8 F b_in [7:0] $end
+$var reg 8 w a_out [7:0] $end
+$var reg 8 x b_out [7:0] $end
+$var reg 32 y accumulator [31:0] $end
+$var reg 16 z product [15:0] $end
+$upscope $end
+$scope module PE02 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 T a_in [7:0] $end
+$var wire 8 G b_in [7:0] $end
+$var reg 8 { a_out [7:0] $end
+$var reg 8 | b_out [7:0] $end
+$var reg 32 } accumulator [31:0] $end
+$var reg 16 ~ product [15:0] $end
+$upscope $end
+$scope module PE03 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 U a_in [7:0] $end
+$var wire 8 H b_in [7:0] $end
+$var reg 8 !! a_out [7:0] $end
+$var reg 8 "! b_out [7:0] $end
+$var reg 32 #! accumulator [31:0] $end
+$var reg 16 $! product [15:0] $end
+$upscope $end
+$scope module PE10 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 B a_in [7:0] $end
+$var wire 8 c b_in [7:0] $end
+$var reg 8 %! a_out [7:0] $end
+$var reg 8 &! b_out [7:0] $end
+$var reg 32 '! accumulator [31:0] $end
+$var reg 16 (! product [15:0] $end
+$upscope $end
+$scope module PE11 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 W a_in [7:0] $end
+$var wire 8 d b_in [7:0] $end
+$var reg 8 )! a_out [7:0] $end
+$var reg 8 *! b_out [7:0] $end
+$var reg 32 +! accumulator [31:0] $end
+$var reg 16 ,! product [15:0] $end
+$upscope $end
+$scope module PE12 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 X a_in [7:0] $end
+$var wire 8 e b_in [7:0] $end
+$var reg 8 -! a_out [7:0] $end
+$var reg 8 .! b_out [7:0] $end
+$var reg 32 /! accumulator [31:0] $end
+$var reg 16 0! product [15:0] $end
+$upscope $end
+$scope module PE13 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 Y a_in [7:0] $end
+$var wire 8 f b_in [7:0] $end
+$var reg 8 1! a_out [7:0] $end
+$var reg 8 2! b_out [7:0] $end
+$var reg 32 3! accumulator [31:0] $end
+$var reg 16 4! product [15:0] $end
+$upscope $end
+$scope module PE20 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 C a_in [7:0] $end
+$var wire 8 g b_in [7:0] $end
+$var reg 8 5! a_out [7:0] $end
+$var reg 8 6! b_out [7:0] $end
+$var reg 32 7! accumulator [31:0] $end
+$var reg 16 8! product [15:0] $end
+$upscope $end
+$scope module PE21 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 [ a_in [7:0] $end
+$var wire 8 h b_in [7:0] $end
+$var reg 8 9! a_out [7:0] $end
+$var reg 8 :! b_out [7:0] $end
+$var reg 32 ;! accumulator [31:0] $end
+$var reg 16 <! product [15:0] $end
+$upscope $end
+$scope module PE22 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 \ a_in [7:0] $end
+$var wire 8 i b_in [7:0] $end
+$var reg 8 =! a_out [7:0] $end
+$var reg 8 >! b_out [7:0] $end
+$var reg 32 ?! accumulator [31:0] $end
+$var reg 16 @! product [15:0] $end
+$upscope $end
+$scope module PE23 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 ] a_in [7:0] $end
+$var wire 8 j b_in [7:0] $end
+$var reg 8 A! a_out [7:0] $end
+$var reg 8 B! b_out [7:0] $end
+$var reg 32 C! accumulator [31:0] $end
+$var reg 16 D! product [15:0] $end
+$upscope $end
+$scope module PE30 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 D a_in [7:0] $end
+$var wire 8 k b_in [7:0] $end
+$var reg 8 E! a_out [7:0] $end
+$var reg 8 F! b_out [7:0] $end
+$var reg 32 G! accumulator [31:0] $end
+$var reg 16 H! product [15:0] $end
+$upscope $end
+$scope module PE31 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 _ a_in [7:0] $end
+$var wire 8 l b_in [7:0] $end
+$var reg 8 I! a_out [7:0] $end
+$var reg 8 J! b_out [7:0] $end
+$var reg 32 K! accumulator [31:0] $end
+$var reg 16 L! product [15:0] $end
+$upscope $end
+$scope module PE32 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 ` a_in [7:0] $end
+$var wire 8 m b_in [7:0] $end
+$var reg 8 M! a_out [7:0] $end
+$var reg 8 N! b_out [7:0] $end
+$var reg 32 O! accumulator [31:0] $end
+$var reg 16 P! product [15:0] $end
+$upscope $end
+$scope module PE33 $end
+$var wire 1 > clk $end
+$var wire 1 ? rst $end
+$var wire 1 J enable $end
+$var wire 8 a a_in [7:0] $end
+$var wire 8 n b_in [7:0] $end
+$var reg 8 Q! a_out [7:0] $end
+$var reg 8 R! b_out [7:0] $end
+$var reg 32 S! accumulator [31:0] $end
+$var reg 16 T! product [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope task drive_cycle $end
+$var reg 8 U! va0 [7:0] $end
+$var reg 8 V! va1 [7:0] $end
+$var reg 8 W! va2 [7:0] $end
+$var reg 8 X! va3 [7:0] $end
+$var reg 8 Y! vb0 [7:0] $end
+$var reg 8 Z! vb1 [7:0] $end
+$var reg 8 [! vb2 [7:0] $end
+$var reg 8 \! vb3 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+b0 !!
+1"
+b0 "!
+0#
+b0 #!
+b0 $
+bx $!
+b0 %
+b0 %!
+b0 &
+b0 &!
+b0 '
+b0 '!
+b0 (
+bx (!
+b0 )
+b0 )!
+b0 *
+b0 *!
+b0 +
+b0 +!
+0,
+bx ,!
+0-
+b0 -!
+b0 .
+b0 .!
+b0 /
+b0 /!
+b0 0
+bx 0!
+b0 1
+b0 1!
+b0 2
+b0 2!
+b0 3
+b0 3!
+b0 4
+bx 4!
+b0 5
+b0 5!
+b0 6
+b0 6!
+b0 7
+b0 7!
+b0 8
+bx 8!
+b0 9
+b0 9!
+b0 :
+b0 :!
+b0 ;
+b0 ;!
+b0 <
+bx <!
+b0 =
+b0 =!
+0>
+b0 >!
+1?
+b0 ?!
+0@
+bx @!
+b0 A
+b0 A!
+b0 B
+b0 B!
+b0 C
+b0 C!
+b0 D
+bx D!
+b0 E
+b0 E!
+b0 F
+b0 F!
+b0 G
+b0 G!
+b0 H
+bx H!
+0I
+b0 I!
+0J
+b0 J!
+b0 K
+b0 K!
+b1010 L
+bx L!
+0M
+b0 M!
+0N
+b0 N!
+0O
+b0 O!
+0P
+bx P!
+b0 Q
+b0 Q!
+b0 R
+b0 R!
+b0 S
+b0 S!
+b0 T
+bx T!
+b0 U
+bx U!
+b0 V
+bx V!
+b0 W
+bx W!
+b0 X
+bx X!
+b0 Y
+bx Y!
+b0 Z
+bx Z!
+b0 [
+bx [!
+b0 \
+bx \!
+b0 ]
+b0 ^
+b0 _
+b0 `
+b0 a
+b0 b
+b0 c
+b0 d
+b0 e
+b0 f
+b0 g
+b0 h
+b0 i
+b0 j
+b0 k
+b0 l
+b0 m
+b0 n
+b0 o
+b0 p
+b0 q
+b0 r
+b0 s
+b0 t
+b0 u
+bx v
+b0 w
+b0 x
+b0 y
+bx z
+b0 {
+b0 |
+b0 }
+bx ~
+$end
+
+#5000
+1!
+1>
+
+#10000
+0!
+0>
+
+#15000
+1!
+1>
+
+#20000
+0!
+0"
+0>
+0?
+
+#25000
+1!
+1>
+
+#30000
+0!
+1#
+0>
+1@
+
+#35000
+1!
+1,
+1>
+1I
+b1 K
+1M
+1O
+b1 Q
+
+#40000
+0!
+0#
+0>
+0@
+b1 U!
+b0 V!
+b0 W!
+b0 X!
+b1 Y!
+b0 Z!
+b0 [!
+b0 \!
+
+#45000
+1!
+1>
+0I
+1J
+b10 K
+1M
+0O
+1P
+b10 Q
+
+#50000
+0!
+b1 $
+b1 (
+0>
+b1 A
+b1 E
+b10 U!
+b101 V!
+b0 Y!
+
+#55000
+1!
+b0 $!
+b0 (!
+b0 ,!
+b1 .
+b0 0!
+b0 4!
+b0 8!
+b0 <!
+1>
+b0 @!
+b0 D!
+b0 H!
+b0 L!
+b0 P!
+b1 R
+b1 S
+b0 T!
+b1 c
+b1 s
+b1 t
+b1 u
+b1 v
+b0 z
+b0 ~
+
+#60000
+0!
+b10 $
+b101 %
+b0 (
+0>
+b10 A
+b101 B
+b0 E
+b11 U!
+b110 V!
+b1001 W!
+b1 Z!
+
+#65000
+1!
+b101 %!
+b1 &!
+b101 '!
+b101 (!
+b101 2
+1>
+b10 R
+b10 S
+b1 T
+b101 W
+b0 c
+b1 g
+b10 s
+b0 t
+b0 v
+b1 w
+
+#70000
+0!
+b11 $
+b110 %
+b1001 &
+b1 )
+0>
+b11 A
+b110 B
+b1001 C
+b1 F
+b100 U!
+b111 V!
+b1010 W!
+b1101 X!
+b0 Z!
+
+#75000
+1!
+b110 %!
+b0 &!
+b0 (!
+b101 )!
+b10 /
+b1001 5!
+b1001 6
+b1 6!
+b1001 7!
+b1001 8!
+1>
+b11 R
+b11 S
+b10 T
+b1 U
+b110 W
+b101 X
+b1001 [
+b1 d
+b0 g
+b1 k
+b11 s
+b10 w
+b1 x
+b10 y
+b10 z
+b1 {
+
+#80000
+0!
+b100 $
+b111 %
+b1010 &
+b1101 '
+b0 )
+0>
+b100 A
+b111 B
+b1010 C
+b1101 D
+b0 F
+b0 U!
+b1000 V!
+b1011 W!
+b1110 X!
+b1 [!
+
+#85000
+1!
+b1 !!
+b111 %!
+b110 )!
+b1 *!
+b110 +!
+b110 ,!
+b101 -!
+b110 3
+b1010 5!
+b0 6!
+b0 8!
+b1001 9!
+b1101 :
+1>
+b1101 E!
+b1 F!
+b1101 G!
+b1101 H!
+b100 R
+b100 S
+b11 T
+b10 U
+b1 V
+b111 W
+b110 X
+b101 Y
+b1010 [
+b1001 \
+b1101 _
+b0 d
+b1 h
+b0 k
+b1 o
+b100 s
+b11 w
+b0 x
+b0 z
+b10 {
+
+#90000
+0!
+b0 $
+b1000 %
+b1011 &
+b1110 '
+b1 *
+0>
+b0 A
+b1000 B
+b1011 C
+b1110 D
+b1 G
+b0 V!
+b1100 W!
+b1111 X!
+b0 [!
+
+#95000
+1!
+b10 !!
+b1000 %!
+b111 )!
+b0 *!
+b0 ,!
+b110 -!
+b11 0
+b101 1!
+b1011 5!
+b1010 7
+b1010 9!
+b1 :!
+b1010 ;!
+b1010 <!
+b1001 =!
+1>
+b1110 E!
+b0 F!
+b0 H!
+b1101 I!
+b101 R
+b0 S
+b100 T
+b11 U
+b10 V
+b1000 W
+b111 X
+b110 Y
+b101 Z
+b1011 [
+b1010 \
+b1001 ]
+b1110 _
+b1101 `
+b1 e
+b0 h
+b1 l
+b0 o
+b0 s
+b100 w
+b11 {
+b1 |
+b11 }
+b11 ~
+
+#100000
+0!
+b0 %
+b1100 &
+b1111 '
+b0 *
+0>
+b0 B
+b1100 C
+b1111 D
+b0 G
+b0 W!
+b10000 X!
+b1 \!
+
+#105000
+1!
+b11 !!
+b0 %!
+b1000 )!
+b111 -!
+b1 .!
+b111 /!
+b111 0!
+b110 1!
+b111 4
+b1100 5!
+b1011 9!
+b0 :!
+b1110 ;
+b0 <!
+b1010 =!
+1>
+b1001 A!
+b1111 E!
+b1110 I!
+b1 J!
+b1110 K!
+b1110 L!
+b1101 M!
+b110 R
+b0 T
+b100 U
+b11 V
+b0 W
+b1000 X
+b111 Y
+b110 Z
+b1100 [
+b1011 \
+b1010 ]
+b1001 ^
+b1111 _
+b1110 `
+b1101 a
+b0 e
+b1 i
+b0 l
+b1 p
+b0 w
+b100 {
+b0 |
+b0 ~
+
+#110000
+0!
+b0 &
+b10000 '
+b1 +
+0>
+b0 C
+b10000 D
+b1 H
+b0 X!
+b0 \!
+
+#115000
+1!
+b100 !!
+b1 "!
+b100 #!
+b100 $!
+b0 )!
+b1000 -!
+b0 .!
+b0 0!
+b100 1
+b111 1!
+b0 5!
+b1011 8
+b1100 9!
+b1011 =!
+1>
+b1 >!
+b1011 ?!
+b1011 @!
+b1010 A!
+b10000 E!
+b1111 I!
+b0 J!
+b0 L!
+b1110 M!
+b1101 Q!
+b111 R
+b0 U
+b100 V
+b0 X
+b1000 Y
+b111 Z
+b0 [
+b1100 \
+b1011 ]
+b1010 ^
+b10000 _
+b1111 `
+b1110 a
+b1101 b
+b1 f
+b0 i
+b1 m
+b0 p
+b0 {
+
+#120000
+0!
+b0 '
+b0 +
+0>
+b0 D
+b0 H
+
+#125000
+1!
+b0 !!
+b0 "!
+b0 $!
+b0 -!
+b1000 1!
+b1 2!
+b1000 3!
+b1000 4!
+b1000 5
+b0 9!
+b1111 <
+b1100 =!
+1>
+b0 >!
+b0 @!
+b1011 A!
+b0 E!
+b10000 I!
+b1111 M!
+b1 N!
+b1111 O!
+b1111 P!
+b1110 Q!
+b1000 R
+b0 V
+b0 Y
+b1000 Z
+b0 \
+b1100 ]
+b1011 ^
+b0 _
+b10000 `
+b1111 a
+b1110 b
+b0 f
+b1 j
+b0 m
+b1 q
+
+#130000
+0!
+0>
+
+#135000
+1!
+b0 1!
+b0 2!
+b0 4!
+b1100 9
+b0 =!
+1>
+b1100 A!
+b1 B!
+b1100 C!
+b1100 D!
+b0 I!
+b10000 M!
+b0 N!
+b0 P!
+b1111 Q!
+b1001 R
+b0 Z
+b0 ]
+b1100 ^
+b0 `
+b10000 a
+b1111 b
+b0 j
+b1 n
+b0 q
+
+#140000
+0!
+0>
+
+#145000
+1!
+0,
+1-
+b10000 =
+1>
+b0 A!
+b0 B!
+b0 D!
+0J
+b11 K
+0M
+b0 M!
+1N
+0P
+b11 Q
+b10000 Q!
+b0 R
+b1 R!
+b10000 S!
+b10000 T!
+b0 ^
+b0 a
+b10000 b
+b0 n
+b1 r
+
+#150000
+0!
+0>
+
+#155000
+1!
+0-
+1>
+b0 K
+0N
+b0 Q
+
+#160000
+0!
+0>
+
+#165000
+1!
+1>

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_ai_accel_bus_behav/xsimk.exe -simmode gui -wdb tb_ai_accel_bus_behav.wdb -simrunnum 0 -socket 60164
+Design successfully loaded
+Design Loading Memory Usage: 20080 KB (Peak: 20080 KB)
+Design Loading CPU Usage: 156 ms
+Simulation completed
+Simulation Memory Usage: 21080 KB (Peak: 21080 KB)
+Simulation CPU Usage: 233 ms

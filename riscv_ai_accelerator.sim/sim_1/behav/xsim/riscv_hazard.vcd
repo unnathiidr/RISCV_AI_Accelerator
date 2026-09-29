@@ -1,0 +1,105 @@
+$date
+   Thu Aug 13 21:23:46 2026
+$end
+
+$version
+  2026.1
+  $dumpfile ("riscv_hazard.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_riscv_hazard $end
+$var reg 5 ! id_rs1 [4:0] $end
+$var reg 5 " id_rs2 [4:0] $end
+$var reg 5 # idex_rd [4:0] $end
+$var reg 1 $ idex_memread $end
+$var wire 1 % pc_write $end
+$var wire 1 & ifid_write $end
+$var wire 1 ' idex_flush $end
+$scope module DUT $end
+$var wire 5 ( id_rs1 [4:0] $end
+$var wire 5 ) id_rs2 [4:0] $end
+$var wire 5 * idex_rd [4:0] $end
+$var wire 1 + idex_memread $end
+$var reg 1 , pc_write $end
+$var reg 1 - ifid_write $end
+$var reg 1 . idex_flush $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+b101 !
+b10 "
+b101 #
+0$
+1%
+1&
+0'
+b101 (
+b10 )
+b101 *
+0+
+1,
+1-
+0.
+$end
+
+#10000
+1$
+0%
+0&
+1'
+1+
+0,
+0-
+1.
+
+#20000
+b1 !
+b111 "
+b111 #
+b1 (
+b111 )
+b111 *
+0,
+0-
+1.
+
+#30000
+b10 "
+b101 #
+1%
+1&
+0'
+b10 )
+b101 *
+1,
+1-
+0.
+
+#40000
+b0 !
+b0 "
+b0 #
+b0 (
+b0 )
+b0 *
+
+#50000
+b1000 !
+b1000 "
+b1000 #
+0%
+0&
+1'
+b1000 (
+b1000 )
+b1000 *
+0,
+0-
+1.

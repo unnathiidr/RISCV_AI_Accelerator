@@ -1,0 +1,162 @@
+$date
+   Thu Aug 13 21:11:36 2026
+$end
+
+$version
+  2026.1
+  $dumpfile ("riscv_decoder.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_riscv_decoder $end
+$var reg 32 ! instruction [31:0] $end
+$var wire 5 " rs1 [4:0] $end
+$var wire 5 # rs2 [4:0] $end
+$var wire 5 $ rd [4:0] $end
+$var wire 1 % reg_write $end
+$var wire 1 & mem_read $end
+$var wire 1 ' mem_write $end
+$var wire 1 ( alu_src $end
+$var wire 1 ) branch $end
+$var wire 1 * branch_ne $end
+$var wire 1 + jump $end
+$var wire 1 , ai_enable $end
+$var wire 4 - alu_control [3:0] $end
+$var wire 32 . immediate [31:0] $end
+$scope module DUT $end
+$var wire 32 / instruction [31:0] $end
+$var reg 5 0 rs1 [4:0] $end
+$var reg 5 1 rs2 [4:0] $end
+$var reg 5 2 rd [4:0] $end
+$var reg 1 3 reg_write $end
+$var reg 1 4 mem_read $end
+$var reg 1 5 mem_write $end
+$var reg 1 6 alu_src $end
+$var reg 1 7 branch $end
+$var reg 1 8 branch_ne $end
+$var reg 1 9 jump $end
+$var reg 1 : ai_enable $end
+$var reg 4 ; alu_control [3:0] $end
+$var reg 32 < immediate [31:0] $end
+$var wire 7 = opcode [6:0] $end
+$var wire 3 > funct3 [2:0] $end
+$var wire 7 ? funct7 [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+b11100110000001010110011 !
+b110 "
+b111 #
+b101 $
+1%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+b0 -
+b0 .
+b11100110000001010110011 /
+b110 0
+b111 1
+b101 2
+13
+04
+05
+06
+07
+08
+09
+0:
+b0 ;
+b0 <
+b110011 =
+b0 >
+b0 ?
+$end
+
+#10000
+b1100100110000001010010011 !
+b11001 #
+1(
+b11001 .
+b1100100110000001010010011 /
+b11001 1
+13
+16
+b11001 <
+b10011 =
+
+#20000
+b100000110010001010000011 !
+b1000 #
+1&
+b1000 .
+b100000110010001010000011 /
+b1000 1
+13
+14
+16
+b1000 <
+b11 =
+b10 >
+
+#30000
+b10100110010011000100011 !
+b101 #
+b1100 $
+0%
+0&
+1'
+b1100 .
+b10100110010011000100011 /
+b101 1
+b1100 2
+03
+04
+15
+16
+b1100 <
+b100011 =
+
+#40000
+b11000101000000001100011 !
+b101 "
+b110 #
+b0 $
+0'
+0(
+1)
+b0 .
+b11000101000000001100011 /
+b101 0
+b110 1
+b0 2
+05
+06
+17
+b0 <
+b1100011 =
+b0 >
+
+#50000
+b10011000101000001110001011 !
+b111 $
+1%
+0)
+1,
+b10011000101000001110001011 /
+b111 2
+13
+07
+1:
+b1011 =
+b1 ?

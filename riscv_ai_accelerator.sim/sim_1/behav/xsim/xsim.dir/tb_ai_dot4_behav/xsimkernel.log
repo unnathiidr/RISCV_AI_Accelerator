@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_ai_dot4_behav/xsimk.exe -simmode gui -wdb tb_ai_dot4_behav.wdb -simrunnum 0 -socket 61749
-Design successfully loaded
-Design Loading Memory Usage: 19052 KB (Peak: 19052 KB)
-Design Loading CPU Usage: 202 ms
-Simulation completed
-Simulation Memory Usage: 19796 KB (Peak: 19796 KB)
-Simulation CPU Usage: 296 ms

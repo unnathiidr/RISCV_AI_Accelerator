@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_ai_matrix_buffer_behav/xsimk.exe -simmode gui -wdb tb_ai_matrix_buffer_behav.wdb -simrunnum 0 -socket 63303
-Design successfully loaded
-Design Loading Memory Usage: 19916 KB (Peak: 19916 KB)
-Design Loading CPU Usage: 140 ms
-Simulation completed
-Simulation Memory Usage: 20824 KB (Peak: 20824 KB)
-Simulation CPU Usage: 296 ms

@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_ai_systolic_4x4_behav/xsimk.exe -simmode gui -wdb tb_ai_systolic_4x4_behav.wdb -simrunnum 0 -socket 51206
-Design successfully loaded
-Design Loading Memory Usage: 19164 KB (Peak: 19164 KB)
-Design Loading CPU Usage: 155 ms
-Simulation completed
-Simulation Memory Usage: 20048 KB (Peak: 20048 KB)
-Simulation CPU Usage: 234 ms

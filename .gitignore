@@ -1,0 +1,20 @@
+# Vivado generated files
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Vivado project file
+*.xpr
+
+# Keep source files
+!*.srcs/
+!*.srcs/**
+
+# Ignore Vivado backup/temp files
+*.jou
+*.log
+*.str
+*.backup
+*.tmp

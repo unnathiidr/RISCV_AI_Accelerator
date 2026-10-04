@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_ai_stream_controller_behav/xsimk.exe -simmode gui -wdb tb_ai_stream_controller_behav.wdb -simrunnum 0 -socket 55494
-Design successfully loaded
-Design Loading Memory Usage: 19988 KB (Peak: 19988 KB)
-Design Loading CPU Usage: 155 ms
-Simulation completed
-Simulation Memory Usage: 20856 KB (Peak: 20856 KB)
-Simulation CPU Usage: 218 ms

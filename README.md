@@ -544,9 +544,4 @@ Possible future improvements include:
 - Power and area optimization
 - Hardware/software co-design
 
-
 ---
-
-## License
-
-This project is intended for academic and educational purposes.
